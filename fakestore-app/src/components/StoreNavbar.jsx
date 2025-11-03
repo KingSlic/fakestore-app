@@ -6,7 +6,7 @@ export default function StoreNavbar() {
     return (
         <Navbar bg="light" variant="light" expand="lg" sticky="top" className="shadow-sm p-3 mb-4">
             
-            <Navbar.Brand as={NavLink}>
+            <Navbar.Brand as={NavLink} to="/">
                 <img src={mango} 
                  alt="mango"
                  width="120"

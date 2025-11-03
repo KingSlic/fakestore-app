@@ -81,7 +81,7 @@ export default function ProductDetails() {
                 </Col>
             </Row>
 
-            <DeleteConfirmModal
+            <DeleteModal
                 show={showDelete}
                 onClose={() => setShowDelete(false)}
                 onConfirm={handleDelete}

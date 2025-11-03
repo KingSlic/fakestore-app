@@ -73,12 +73,10 @@ export default function EditProduct() {
         price: Number(form.price),
         description: form.description.trim(),
         category: form.category.trim(),
-        image: "https://i.pravatar.cc/300", // placeholder image
+        image: "https://i.pravatar.cc/300",
       };
       await axios.put(`https://fakestoreapi.com/products/${id}`, payload);
-      setSuccess("Product updated (mock). Changes won’t persist on refresh.");
-      // If you prefer to go back after saving:
-      // navigate(`/products/${id}`);
+      setSuccess("Product updated!");
     } catch {
       setError("Failed to update product. Please try again.");
     } finally {
@@ -170,11 +168,6 @@ export default function EditProduct() {
             </Button>
           </div>
         </Form>
-
-        <p className="text-muted mt-3" style={{ fontSize: "0.9rem" }}>
-          FakeStoreAPI note: POST/PUT/DELETE respond as successful but do not
-          persist changes across refreshes.
-        </p>
       </Card.Body>
     </Card>
   );
