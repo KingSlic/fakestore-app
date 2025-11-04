@@ -5,8 +5,8 @@ import { Row, Col, Card, Button, Spinner, Alert } from "react-bootstrap";
 
 export default function ProductList() {
   const [product, setProduct] = useState(null);
-  const [loading, setLoading]   = useState(true);
-  const [error, setError]       = useState("");
+  const [loading, setLoading] = useState(true);
+  const [error, setError]     = useState("");
 
   const loadProduct = async () => {
     setLoading(true);

@@ -1,30 +1,3 @@
-// import { Container, Row, Col, Button } from "react-bootstrap";
-// import { useNavigate } from 'react-router-dom'
-// import { Link } from "react-router-dom";
-
-// export default function Home() {
-//     return (
-
-//         <Row className="justify-content-center">
-//             <Col className="text-center">
-//                 <h1 className="mb-3">Welcome to MyFake</h1>
-//                 <p className="lead">Demo E-comm site built with React, React Router,
-//                     and React-Bootstrap using the FakeStore API.
-//                 </p>
-//                 <Button as={Link} to="/products" size="lg">Browse Products</Button>
-//             </Col>
-//             <Col md={5} className="text-md-end py-4">
-//                 <img
-//                     src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop"
-//                     alt="Shopping"
-//                     className="img-fluid rounded shadow"
-//                 />
-//             </Col>
-//         </Row>
-
-//     )
-// }
-
 import { Container, Row, Col, Carousel, Button } from "react-bootstrap";
 import { Link } from 'react-router-dom'
 

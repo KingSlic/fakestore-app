@@ -5,22 +5,9 @@ html, body, #root {
 }
 
 body {
-  background-color: #2d2d2d;
+  background-color: #2d2d2d !important;
 }
 
-
-.carousel-item-overlay::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 170, 51, 0.18) 0%,
-    rgba(255, 120, 0, 0.32) 100%
-  );
-  pointer-events: none;
-  mix-blend-mode: multiply;
-}
 
 
 .carousel-frame {
