@@ -50,7 +50,7 @@ export default function ProductList() {
       <Row xs={1} sm={2} md={3} lg={4} className="g-4">
         {product.map((p) => (
           <Col key={p.id}>
-            <Card className="h-100"h>
+            <Card className="h-100 product-card">
               <div className="text-center"
                style={{ height: 220, padding: 12 }}>
                 <Card.Img
@@ -60,10 +60,10 @@ export default function ProductList() {
                   style={{ objectFit: "contain", height: "100%" }}
                 />
               </div>
-              <Card.Body className="d-flex flex-column">
+              <Card.Body className="d-flex flex-column ">
                 <Card.Title className="fs-6">{p.title}</Card.Title>
                 <Card.Text className="fw-semibold mb-2">${p.price}</Card.Text>
-                <Button as={Link} to={`/products/${p.id}`} className="mt-auto">
+                <Button as={Link} to={`/products/${p.id}`} className="mt-auto product-btn">
                   View Details
                 </Button>
               </Card.Body>

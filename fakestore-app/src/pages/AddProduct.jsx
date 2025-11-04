@@ -32,11 +32,11 @@ export default function AddProduct() {
                 title: form.title,
                 price: Number(form.price),
                 description: form.description,
-                image: 'https://i.pravatar.cc', // placeholder
+                image: 'https://i.pravatar.cc',
                 category: form.category
             }
             await axios.post('https://fakestoreapi.com/products', payload)
-            setSuccess('Product created successfully (mock). Note: FakeStoreAPI does not persist new products.')
+            setSuccess('Product created successfully!')
             setForm({ title: '', price: '', description: '', category: '' })
         } catch (err) {
             setError('Failed to create product. Please try again.')

@@ -65,12 +65,12 @@ export default function ProductDetails() {
                     />
                 </Col>
                 <Col md={7}>
-                    <h2 className="mb-3">{product.title}</h2>
+                    <h2 className="mb-3 text-light">{product.title}</h2>
                     <div className="mb-2">
                         <Badge bg="secondary" className="text-capitalize">{product.category}</Badge>
                     </div>
                     <h4 className="text-success mb-3">${product.price}</h4>
-                    <p className="mb-4">{product.description}</p>
+                    <p className="mb-4 text-white-50">{product.description}</p>
                     <div className="d-flex gap-2 flex-wrap">
                         <Button as={Link} to={`/products/${id}/edit`} variant="warning">Edit</Button>
                         <Button variant="danger" onClick={() => setShowDelete(true)} disabled={deleting}>

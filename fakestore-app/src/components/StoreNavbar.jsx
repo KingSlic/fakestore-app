@@ -2,7 +2,10 @@ import { NavLink } from 'react-router-dom';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import mango from "../assets/mango-1.png"
 
+
 export default function StoreNavbar() {
+    
+  //A lil magic to 
   const linkStyle = ({ isActive }) => ({
     color: isActive ? "#d4a017" : "#000000",   // gold active, black default
     fontWeight: isActive ? "600" : "400",
